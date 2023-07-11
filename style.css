@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* font-family: 'Poppins', sans-serif;  Heading */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: hsl(0, 0%, 97%);
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    padding: 40px 50px;
+    background: url(images/bg-hero-desktop.svg);
+    background-color: hsl(193, 100%, 96%);
+}
+
+.main header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.main header img {
+    width: 150px;
+}
+
+.main header a {
+    text-decoration: none;
+    background-color: white;
+    padding: 10px 40px;
+    color: black;
+    border-radius: 20px;
+    font-weight: 700;
+}
+
+.main header a:hover {
+    opacity: .7;
+}
+
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home img {
+    width: 600px;
+}
+
+.home-right {
+    margin-top: 70px;
+}
+
+.home .home-left {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+.home-left h3 {
+    font-size: 2em;
+    max-width: 400px;
+    margin-bottom: 20px;
+}
+
+.home-left p {
+    font-size: 1.2em;
+    max-width: 550px;
+    margin-bottom: 30px;
+}
+
+.home-left a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    background-color: hsl(322, 100%, 66%);
+    padding: 13px 50px;
+    border-radius: 25px;
+}
+
+.home-left a:hover {
+    opacity: .7;
+}
+
+
+/* Home Section End */
+
+.cards {
+    display: flex;
+    width: 80%;
+    margin: 100px auto;
+    flex-direction: column;
+    margin-bottom: 300px;
+}
+
+.cards article {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: 40px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    transform: translateZ(10px);
+}
+
+.cards article:hover {
+    scale: 1.01;
+}
+
+.cards article img {
+    width: 350px;
+}
+
+.cards article h3 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cards article p {
+    max-width: 450px;
+}
+
+/* Cards Section End */
+
+.footer {
+    position: relative;
+    height: 500px;
+    background-color: hsl(192, 100%, 9%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.main-footer {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.main-footer img {
+    width: 200px;
+    margin-bottom: 40px;
+}
+
+.main-footer p {
+    max-width: 350px;
+    margin-bottom: 30px;
+}
+
+.footer a,
+.footer p,
+.footer h3 {
+    color: white;
+}
+
+.footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-top: 30px;
+
+}
+
+.footer div a {
+    margin-bottom: 25px;
+    text-decoration: none;
+}
+
+.footer div a:hover {
+    text-decoration: underline;
+}
+
+.social {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: start !important;
+    align-items: start !important;
+}
+
+.social a {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.copy {
+    font-size: 15px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: white;
+}
+
+.get {
+    position: absolute;
+    background-color: white;
+    top: -32%;
+    left: 30%;
+    width: 600px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    border-radius: 20px;
+}
+
+.get h3 {
+    color: black;
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.get a {
+    background-color: hsl(322, 100%, 66%);
+    padding: 20px 70px;
+    text-align: center;
+    border-radius: 30px;
+}
+
+.get a:hover {
+    text-decoration: none !important;
+    opacity: .7;
+}
+
+
+/* Media Start */
+
+
+@media only screen and (max-width: 600px) {
+    
+    .main {
+        padding: 40px 20px;
+        background: url(images/bg-hero-mobile.svg);
+    }
+
+    .main header img {
+        width: 120px;
+    }
+    
+    .main header a {
+        padding: 7px 20px;
+    }
+
+    .home {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+    .home img {
+        width: 300px;
+    }
+    
+    .home .home-left {
+        align-items: center;
+        justify-content: center;
+        margin-top: 50px;
+    }
+    
+    .home-left h3 {
+        font-size: 1.6em;
+        text-align: center;
+    }
+    
+    .home-left p {
+        font-size: 1em;
+        max-width: 300px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .cards article {
+        flex-direction: column-reverse;
+        width: 90%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .cards .two{
+        flex-direction: column !important;
+    }
+
+    .cards article img {
+        width: 300px;
+    }
+    
+    .cards article h3 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+    
+    .cards article p {
+        max-width: 450px;
+    }
+
+    .cards {
+        width: 100%;
+        margin: 100px auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 200px;
+    }
+
+    .footer {
+        height: 100%;
+        flex-direction: column;
+        padding: 100px 20px;
+        align-items: start;
+    }
+    
+
+    .main-footer img {
+        width: 150px;
+    }
+
+
+    .footer div {
+        margin-top: 30px;
+        text-align: start;
+    
+    }
+    
+    .footer div a {
+        text-align: start;
+    }
+
+    .get {
+        background-color: white;
+        top: -18%;
+        left: 8%;
+        width: 300px;
+        padding: 20px;
+    }
+    
+    .get h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .get a {
+        padding: 10px 30px;
+    }
+    .social {
+        justify-content: start !important;
+        align-items: start !important;
+        align-self: center;
+    }
+
+}
